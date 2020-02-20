@@ -15,12 +15,8 @@ control and drive. Therefore, how to make humans drive cars more efficiently and
 a problem that we all need to think about.</p>
 <h3>Project Methods</h3>
 <p>I will use an external camera to get outside information for analysis. External information is passed into this algorithm, 
-the algorithm makes analysis and judgment, and outputs the result.There is a paper that wrote by Soukupová and Čech in 2016.  
-In them research, they set the four landmarks around the eyes. They use the eye aspect ratio EAR in Eq to make sure the eye-opening in. 
-If the ration is constant, then rapidly drops to zero, then increases again, indicating a blink has taken place. If the ration does not 
-increase again, thus implying that the person has closed their eyes. I will use this method to determine if the driver is dozing.
-This picture is come from the paper wrote by Tereza Soukupova and Jan ´ Cech. In the top-left picture, the open and closed eyes with 
-landmarks Pi automatically detected. These landmarks will be used to calculate for the eye aspect ratio. I also need to set the threshold.
+the algorithm makes analysis and judgment, and outputs the result.</p>
+<p>There is a paper that wrote by Soukupová and Čech in 2016.  In them research, they set the four landmarks around the eyes. They use the eye aspect ratio EAR in Eq to make sure the eye-opening in. If the ration is constant, then rapidly drops to zero, then increases again, indicating a blink has taken place. If the ration does not increase again, thus implying that the person has closed their eyes. I will use this method to determine if the driver is dozing.This picture is come from the paper wrote by Tereza Soukupova and Jan ´ Cech. In the top-left picture, the open and closed eyes with landmarks Pi automatically detected. These landmarks will be used to calculate for the eye aspect ratio. I also need to set the threshold.
 If the eye aspect ratio falls below this threshold, I will start counting the number of frames the person has closed their eyes for. 
 If the number of frames the person has closed their eyes in exceeds the threshold that set to determine if the person want to sleep. 
 And then the program will play some alarm to remind the driver be careful to drive.</p>
